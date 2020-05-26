@@ -18,7 +18,7 @@ subtitle = ""
   icon = "r-project"
   icon_pack = "fab"
   name = "R"
-  description = "90%"
+  description = "80%"
   
 [[feature]]
   icon = "chart-line"
@@ -27,10 +27,10 @@ subtitle = ""
   description = "100%"  
   
 [[feature]]
-  icon = "camera-retro"
+  icon = "globe-americas"
   icon_pack = "fas"
-  name = "Photography"
-  description = "10%"
+  name = "Earth Science"
+  description = "70%"
 
 # Uncomment to use emoji icons.
 # [[feature]]
