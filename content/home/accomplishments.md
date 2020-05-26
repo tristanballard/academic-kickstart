@@ -26,7 +26,7 @@ date_format = "Jan 2006"
   certificate_url = "https://www.credential.net/319eb128-e039-45a0-a914-6c3aac76c13b"
   date_start = "2019-10-01"
   date_end = ""
-  description = "Our team developed a novel recommendation algorithm for NYC taxi fares"
+  description = "Our team developed a novel machine learning recommendation algorithm for NYC taxi fares"
 
 #[[item]]
 #  organization = "edX"
