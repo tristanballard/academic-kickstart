@@ -2,9 +2,9 @@
 title: "Comment on 'Legacy nitrogen may prevent achievement of water quallity goals in the Gulf of Mexico'"
 author: "Tristan Ballard (tballard@stanford.edu)"
 date: "3/07/2019"
-output: html_document
-editor_options: 
-  chunk_output_type: console
+slug: test
+tags:
+ - R
 ---
 
 **First read in packages used later for plotting. If they are not installed, run install.packages('packageName').**
