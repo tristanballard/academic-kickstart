@@ -7,7 +7,7 @@ categories: []
 tags: ["R"]
 subtitle: 'This is the subtitle'
 summary: 'This is the summary'
-authors: admin
+authors: []
 lastmod: '2019-05-01T10:05:28+00:00'
 featured: no
 image:
