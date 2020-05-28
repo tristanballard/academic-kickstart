@@ -43,7 +43,7 @@ Precipitation is a dominant driver of nitrogen runoff, so I downloaded free 4km 
 
 {{< figure src="featured.jpg" title="A caption" lightbox="true" >}}
 Test again
-![png](./static/img/precip_cropn.png)
+![](./static/img/precip_cropn.png)
 
 Test again
 ``` r
@@ -53,6 +53,7 @@ par(mfrow=c(1,2))
 ```
 
 ![](./precip_cropn.png)
+![](./featured.jpg)
 
 Next I read in the chloropigment data from Rabalais et al. (MPB 2004). I also verify the R2 values they provide for their model vs. the pigments. I recreate their R2 values very nearly for the 1960-1997 period (noting that the N load estimates I have are from the GBC paper, so may be slightly different than those used in the updated Science paper) but are a bit lower than reported in the 1820-1930 period.
 
