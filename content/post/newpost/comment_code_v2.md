@@ -1,5 +1,5 @@
 ---
-title: 'Comment on 'Legacy nitrogen may prevent achievement of water quallity goals in the Gulf of Mexico'
+title: 'Comment on Legacy nitrogen may prevent achievement of water quallity goals in the Gulf of Mexico'
 author: admin
 date: '2020-05-27'
 slug: []
