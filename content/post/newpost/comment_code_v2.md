@@ -41,9 +41,11 @@ head(mrb)
 ## Precipitation and excess crop nitrogen
 Precipitation is a dominant driver of nitrogen runoff, so I downloaded free 4km resolution precipitation data from PRISM and extracted annual estimates of total precipitation over the Mississippi River Basin watershed. Working with shapefiles in R has become much easier using the `ncdf4 package`, though computation speeds can be slow for large shapefiles. Let's take a look at the basin-wide annual precipitation and annual excess nitrogen from croplands.
 
-{{< figure src="featured.jpg" title="A caption" lightbox="true" >}}
+{{< figure src="../featured.jpg" title="A caption" lightbox="true" >}}
 Test again
-![](../static/img/precip_cropn.png)
+![](../../../static/img/precip_cropn.png)
+![](../../../../static/img/precip_cropn.png)
+
 
 Test again
 ``` r
