@@ -1,13 +1,13 @@
 ---
-title: 'Doing Bayesian Lead-210 interpretation'
+title: 'Comment on 'Legacy nitrogen may prevent achievement of water quallity goals in the Gulf of Mexico'
 author: admin
-date: '2019-05-01'
+date: '2020-05-27'
 slug: []
 categories: []
-tags: ["R", "Tutorials"]
+tags: ["R"]
 subtitle: 'This is the subtitle'
 summary: 'This is the summary'
-authors: []
+authors: admin
 lastmod: '2019-05-01T10:05:28+00:00'
 featured: no
 image:
@@ -20,16 +20,22 @@ projects: []
 Read in <a href="https://cfpub.epa.gov/roe/indicator.cfm?i=33">observed</a> and Van Meter predicted MRB loading datasets and convert to consistent kg/hectare units.
 
 ``` r
+## MRB area is 291451362.1ha, and scaling by .00110231 converts tons to kg
+mrbKG = mrb / 291451362.1  / .00110231
+mrbDat = data.frame(year = 1955:2014, loadObserved = mrbKG)
+vmPred = read.csv('./VM_predicted.csv', head=T) #Predicted load in kilotons
+vmPred$loadPredVanMeter = vmPred$load / 291451362.1  / .00110231 * 1000 # convert to kg/ha
+mrb = left_join(mrbDat, vmPred) 
 head(mrb)
 ```
 
-## year loadObserved loadPredVanMeter
-## 1 1955     1.475376         1.192663
-## 2 1956     1.036194         1.072244
-## 3 1957     1.478807         1.445550
-## 4 1958     1.266078         1.472036
-## 5 1959     1.142558         1.260760
-## 6 1960     1.108247         1.227245
+    ## year loadObserved loadPredVanMeter
+    ## 1 1955     1.475376         1.192663
+    ## 2 1956     1.036194         1.072244
+    ## 3 1957     1.478807         1.445550
+    ## 4 1958     1.266078         1.472036
+    ## 5 1959     1.142558         1.260760
+    ## 6 1960     1.108247         1.227245
 
 ## Precipitation and excess crop nitrogen
 ``` r
