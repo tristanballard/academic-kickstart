@@ -52,7 +52,7 @@ par(mfrow=c(1,2))
   plot(surplus.df$year, surplus.df$crop.surplus, type='l', ylab='N Inputs (kg/ha)', xlab='Year', las=1, col='#FD8B25', lwd=1.5, main='Basin-Wide Crop N Inputs', cex.main=.9)
 ```
 
-![png](/precip_cropn.png)
+![png](./precip_cropn.png)
 
 Next I read in the chloropigment data from Rabalais et al. (MPB 2004). I also verify the R2 values they provide for their model vs. the pigments. I recreate their R2 values very nearly for the 1960-1997 period (noting that the N load estimates I have are from the GBC paper, so may be slightly different than those used in the updated Science paper) but are a bit lower than reported in the 1820-1930 period.
 
