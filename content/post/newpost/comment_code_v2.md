@@ -18,7 +18,7 @@ projects: []
 ---
 
 Read in <a href="https://cfpub.epa.gov/roe/indicator.cfm?i=33">observed</a> and Van Meter predicted MRB loading datasets and convert to consistent kg/hectare units.
-{{< figure src="../precip_cropn.jpg" title="A caption" lightbox="true" >}}
+{{< figure src="../precip_cropn.png" title="A caption" lightbox="true" >}}
 
 ``` r
 ## MRB area is 291451362.1ha, and scaling by .00110231 converts tons to kg
